@@ -1,0 +1,65 @@
+{
+ "signatures": [
+  {
+   "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-09-27T12:51:14Z",
+  "keys": {
+   "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDEtXfpN1Iqv/ljvInD+9ZG57vx/o\n6AjClmgP+ORiHPXouVLYT0eW5QhZnGovIU0Ni4UIQDXnGRq+Hdro21Uh7Q==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-online-uri": "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/efcf226296c54540b1b197488663a228"
+   },
+   "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE++Wv+DcLRk+mfkmlpCwl1GUi9EMh\npBUTz8K0fH7bE4mQuViGSyWA/eyMc0HvzZi6Xr0diHw0/lUPBvok214YQw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@kommendorkapten"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
