@@ -14,6 +14,7 @@ jobs:
         uses: theupdateframework/tuf-on-ci/actions/upload-repository@moar-refactor
         with:
           gh_pages: true
+          metadata_path: /
 
   deploy:
     permissions:
