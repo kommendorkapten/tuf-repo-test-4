@@ -1,1 +1,8 @@
-{"invites":{}}
+{
+  "invites": {
+    "@-test-1": [
+      "root",
+      "targets"
+    ]
+  }
+}
