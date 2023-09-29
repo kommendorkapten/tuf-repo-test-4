@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": ""
+   "sig": "3046022100e1166fda00b76b1dc0e722cddcbe7f71f1846ff04031d2618df4ca0a6c37a0510221008c1575c1fb450bcb6bca736e6d46165d18ab13daba1d1cf5754c56a902fe5ecc"
   }
  ],
  "signed": {
