@@ -1,0 +1,79 @@
+{
+ "signatures": [
+  {
+   "keyid": "97be12c057fcef9138f7592269d4d088bda9159de1ed173bf62707a866d06c17",
+   "sig": "304502200e5b7b072147cd720ff6e544758adb154d4a5192cee877ae419f8bff7cad7bf2022100b949fa7cd7b5800a4f2520aae6bab9578a4e78f4116afff99f381f8d7611eed6"
+  },
+  {
+   "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+   "sig": "304502205384ef275ce9a9e01512719ea39e97d10b6b06bb634b004c504d59d7f73c7ee1022100e33a1d14674758168219c7ecba5adf901ca77f2d4e5f7117aab26a60b08e30ee"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-10-02T11:08:34Z",
+  "keys": {
+   "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDEtXfpN1Iqv/ljvInD+9ZG57vx/o\n6AjClmgP+ORiHPXouVLYT0eW5QhZnGovIU0Ni4UIQDXnGRq+Hdro21Uh7Q==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-online-uri": "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/efcf226296c54540b1b197488663a228"
+   },
+   "97be12c057fcef9138f7592269d4d088bda9159de1ed173bf62707a866d06c17": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExnRKjlKmdNwXFY1OdgIfWeyLpBPt\nBQ1dUMWkhKdGnQsOMjSldR87N7tY490eVvDScow7Qgtg8jxznX1FvVm9Uw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@-test-1"
+   },
+   "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE++Wv+DcLRk+mfkmlpCwl1GUi9EMh\npBUTz8K0fH7bE4mQuViGSyWA/eyMc0HvzZi6Xr0diHw0/lUPBvok214YQw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@kommendorkapten"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+     "97be12c057fcef9138f7592269d4d088bda9159de1ed173bf62707a866d06c17"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+     "97be12c057fcef9138f7592269d4d088bda9159de1ed173bf62707a866d06c17"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "12879a64f15d4e7d8f4695a8942d62a7dc7e14b94c31626d0bfd55d0864b6587"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
