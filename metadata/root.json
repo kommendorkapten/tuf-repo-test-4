@@ -3,6 +3,10 @@
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
    "sig": ""
+  },
+  {
+   "keyid": "97be12c057fcef9138f7592269d4d088bda9159de1ed173bf62707a866d06c17",
+   "sig": "304502200e5b7b072147cd720ff6e544758adb154d4a5192cee877ae419f8bff7cad7bf2022100b949fa7cd7b5800a4f2520aae6bab9578a4e78f4116afff99f381f8d7611eed6"
   }
  ],
  "signed": {
