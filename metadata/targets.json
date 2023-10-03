@@ -1,0 +1,25 @@
+{
+ "signatures": [
+  {
+   "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
+   "sig": "304502205ddb77f538ba2ffd1d1e4951704ff2bd1e61acb53ce79ca648e6733b2f3d518f022100b5aa6226515c4ce9bd5ea49ba591191a8212bc2b5d98077a257efc542cde6c6d"
+  },
+  {
+   "keyid": "e58f887cea4d7dfb883557cf3a20f9468cb964757f3c3647bdf1a119dfa6a0ef",
+   "sig": "304402200892c6250afcecb51397154833d4c3004fc97de704e26f7816c5ab829f5002970220722214d1fb5a8b57d399a9a36a3e26aab78c807609d19f328f4da53f5bc54982"
+  },
+  {
+   "keyid": "dcace93c294842bf83cd6f1d5392e1c860ef4832128d7685e451ce4005d575fa",
+   "sig": "304402203dfd026fc5e3695d2e0e295875423d4ffcbfa72cd6d2d8bf580e3fff61a44fb1022064ee16ad9d5a11d51d084a54afb86f5e680e2866cb9b42f591d61dab3cf79a95"
+  }
+ ],
+ "signed": {
+  "_type": "targets",
+  "expires": "2023-10-29T11:25:00Z",
+  "spec_version": "1.0.31",
+  "targets": {},
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 30,
+  "x-tuf-on-ci-signing-period": 20
+ }
+}
