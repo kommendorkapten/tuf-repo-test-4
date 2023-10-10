@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - id: build-and-upload-repository
-        uses: kommendorkapten/tuf-on-ci/actions/upload-repository@i79-step-summary
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@be983ca075929ed19bc6d079dd0cae437d9217a8
         with:
           gh_pages: true
           metadata_path: /
