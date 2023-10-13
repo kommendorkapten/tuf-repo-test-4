@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - id: online-sign
-        uses: theupdateframework/tuf-on-ci/actions/online-sign@be983ca075929ed19bc6d079dd0cae437d9217a8
+        uses: theupdateframework/tuf-on-ci/actions/online-sign@5875ebd693d5a9c4496c4669d81763e9d264dd6f
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
