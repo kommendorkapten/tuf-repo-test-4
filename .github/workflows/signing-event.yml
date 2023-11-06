@@ -17,4 +17,4 @@ jobs:
       issues: write
     steps:
       - name: Signing event
-        uses: theupdateframework/tuf-on-ci/actions/signing-event@be983ca075929ed19bc6d079dd0cae437d9217a8
+        uses: theupdateframework/tuf-on-ci/actions/signing-event@3491682aa226e159ddab4011df8009468cbf0dea
