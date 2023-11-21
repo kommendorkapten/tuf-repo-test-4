@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - id: build-and-upload-repository
-        uses: theupdateframework/tuf-on-ci/actions/upload-repository@be983ca075929ed19bc6d079dd0cae437d9217a8
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@9319dd804f24ed81a02bea5e1c7edf5b0cdb9ba5
         with:
           gh_pages: true
           metadata_path: /
