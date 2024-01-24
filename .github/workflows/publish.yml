@@ -4,17 +4,23 @@ permissions: {}
 
 on:
   workflow_dispatch:
+    inputs:
+      ref:
+        type: string
+        required: false
 
 jobs:
   build:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
-
     steps:
       - id: build-and-upload-repository
-        uses: theupdateframework/tuf-on-ci/actions/upload-repository@be983ca075929ed19bc6d079dd0cae437d9217a8
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@ecbe81ad94615bfb2d133a022db383c80d782038 # v0.4.0
         with:
           gh_pages: true
           metadata_path: /
+          ref: ${{ inputs.ref }}
 
   deploy:
     permissions:
@@ -28,4 +34,4 @@ jobs:
     steps:
       - name: Deploy TUF-on-CI repository to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5 # v2.0.4
+        uses: actions/deploy-pages@7a9bd943aa5e5175aeb8502edcc6c1c02d398e10 # v4.0.2
