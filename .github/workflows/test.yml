@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Smoke test TUF-on-CI repository with a TUF client
         uses: theupdateframework/tuf-on-ci/actions/test-repository@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        with:
+          metadata_url: https://kommendorkapten.github.io/tuf-repo-test-4
 
   update-issue:
     runs-on: ubuntu-latest
