@@ -16,6 +16,7 @@ jobs:
       contents: write # for adding targets changes into the signing event branch
       issues: write
       actions: write # for dispatching another signing-event workflow
+      pull-requests: write
 
     steps:
       - name: Signing event
