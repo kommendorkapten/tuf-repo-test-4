@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: build-and-upload-repository
-        uses: theupdateframework/tuf-on-ci/actions/upload-repository@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@5cb2aace8d5a0d6ec6197c6235aee3a484a1a443
         with:
           gh_pages: true
           metadata_path: /
@@ -50,7 +50,7 @@ jobs:
       issues: 'write' # for modifying Issues
     steps:
       - name: Update the issue for the workflow
-        uses: theupdateframework/tuf-on-ci/actions/update-issue@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/update-issue@5cb2aace8d5a0d6ec6197c6235aee3a484a1a443
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
           success: ${{ !contains(needs.*.result, 'failure') }}
