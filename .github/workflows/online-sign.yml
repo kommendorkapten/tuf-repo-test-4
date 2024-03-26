@@ -24,7 +24,7 @@ jobs:
         with:
           app-id: ${{ secrets.TUF_APP_ID }}
           private-key: ${{ secrets.TUF_APP_PRIVATE_KEY}}
-          repository: tuf-repo-test-4
+          repositories: tuf-repo-test-4
       - id: online-sign
         uses: theupdateframework/tuf-on-ci/actions/online-sign@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
         env:
