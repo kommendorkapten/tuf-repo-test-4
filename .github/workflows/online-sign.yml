@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Generate app token
         id: generate_token
-        uses: actions/create-github-app-token@e995b4e40ace2eb5bf13137d9abe242c98f3aab6
+        uses: actions/create-github-app-token@78e5f2ddc08efcb88fbbee6cfa3fed770ba550c3
         with:
           app-id: ${{ secrets.TUF_APP_ID }}
           private-key: ${{ secrets.TUF_APP_PRIVATE_KEY}}
