@@ -19,7 +19,7 @@ jobs:
       actions: 'write' # for dispatching publish workflow
     steps:
       - name: Generate app token
-        id: generate-token
+        id: generate_token
         uses: actions/create-github-app-token@e995b4e40ace2eb5bf13137d9abe242c98f3aab6
         with:
           app-id: ${{ secrets.TUF_APP_ID }}
