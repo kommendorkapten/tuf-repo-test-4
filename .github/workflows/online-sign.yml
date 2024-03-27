@@ -18,13 +18,6 @@ jobs:
       contents: 'write' # for commiting snapshot/timestamp changes
       actions: 'write' # for dispatching publish workflow
     steps:
-      - name: Generate app token
-        id: generate_token
-        uses: actions/create-github-app-token@e995b4e40ace2eb5bf13137d9abe242c98f3aab6
-        with:
-          app-id: ${{ secrets.TUF_APP_ID }}
-          private-key: ${{ secrets.TUF_APP_PRIVATE_KEY}}
-          repositories: tuf-repo-test-4
       - id: online-sign
         uses: theupdateframework/tuf-on-ci/actions/online-sign@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
         env:
@@ -33,7 +26,7 @@ jobs:
           AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
           AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID}}
         with:
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
 
