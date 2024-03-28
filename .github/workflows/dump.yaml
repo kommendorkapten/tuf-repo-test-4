@@ -11,4 +11,4 @@ jobs:
       - name: wtf jwt
         shell: bash
         run: |
-           printf ${{ secrets.TUF_APP_ID }} | od -h
+           printf ${{ secrets.TUF_APP_ID }} | wc -c
