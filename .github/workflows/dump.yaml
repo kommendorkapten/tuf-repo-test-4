@@ -1,0 +1,14 @@
+name: Dump a JWT
+on:
+  workflow_dispatch:
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: wtf jwt
+        shell: bash
+        run: |
+           printf "abc%s123\n" $(printf ${{ secrets.TUF_APP_ID }} | base64)
