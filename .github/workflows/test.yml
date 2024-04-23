@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Smoke test TUF-on-CI repository with a TUF client
-        uses: theupdateframework/tuf-on-ci/actions/test-repository@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/test-repository@d0c0bb3b957286948a10fd8bc21c49e3816a9241
         with:
           metadata_url: https://kommendorkapten.github.io/tuf-repo-test-4
 
@@ -26,7 +26,7 @@ jobs:
       issues: 'write' # for modifying Issues
     steps:
       - name: Update the issue for the workflow
-        uses: theupdateframework/tuf-on-ci/actions/update-issue@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/update-issue@d0c0bb3b957286948a10fd8bc21c49e3816a9241
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
           success: ${{ !contains(needs.*.result, 'failure') }}
