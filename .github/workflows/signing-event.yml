@@ -20,6 +20,6 @@ jobs:
 
     steps:
       - name: Signing event
-        uses: theupdateframework/tuf-on-ci/actions/signing-event@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/signing-event@8dce72ce3e34740ac6146518fe24af4c96e806fd
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
