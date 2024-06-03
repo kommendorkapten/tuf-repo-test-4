@@ -11,11 +11,11 @@ jobs:
   create-signing-events:
     runs-on: ubuntu-latest
     permissions:
-      contents: 'write' # for committing to signing event branch
-      actions: 'write' # for dispatching signing event workflow
+      contents: write # for committing to signing event branch
+      actions: write # for dispatching signing event workflow
     steps:
       - name: Create signing events for offline version bumps
-        uses: theupdateframework/tuf-on-ci/actions/create-signing-events@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/create-signing-events@a486e2d6fcf93af4cb0f479e6a280f34125647d6 # v0.10.0
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
 
@@ -24,10 +24,11 @@ jobs:
     needs: [create-signing-events]
     if: always() && !cancelled()
     permissions:
-      issues: 'write' # for modifying Issues
+      issues: write # for modifying Issues
+      contents: read # for checking out the repository
     steps:
       - name: Update the issue for the workflow
-        uses: theupdateframework/tuf-on-ci/actions/update-issue@ae7c08473b22b6d5e15025f5c3bf6d4dde5e8074
+        uses: theupdateframework/tuf-on-ci/actions/update-issue@a486e2d6fcf93af4cb0f479e6a280f34125647d6 # v0.10.0
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
           success: ${{ !contains(needs.*.result, 'failure') }}
