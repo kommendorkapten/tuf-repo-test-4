@@ -2,10 +2,17 @@
  "signatures": [],
  "signed": {
   "_type": "targets",
-  "expires": "2025-06-03T09:02:49Z",
+  "expires": "2025-06-03T09:13:14Z",
   "spec_version": "1.0.31",
-  "targets": {},
-  "version": 1,
+  "targets": {
+   "new-delegate/file1.txt": {
+    "hashes": {
+     "sha256": "c98e6baca6e5b18de7e606f00b0ae88a2dae630387d2133020e6de9ddb911a09"
+    },
+    "length": 17
+   }
+  },
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
