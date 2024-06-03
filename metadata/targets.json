@@ -2,12 +2,40 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "304402200b7c156204abd66cdca7148df681963f8b57a7b0ef4b43e8202f80bd2c3c1c6b022029f435d6294a587d1072c11737850514e9b72ac787e3274e6b299349e95b12c5"
+   "sig": "3044022058b581bc11bf2abc0f2a66ee8f4d135f124cde3f5dbaf55006c2f36ef5f81b6e02207251aab132ed11561fdc8919ed14b69feea67b9b399b6c372e9c3884d9c69194"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2025-03-22T09:48:51Z",
+  "delegations": {
+   "keys": {
+    "452d01cd3affe99cb9bed1fb797cd5111fad7794af27ed68b854ecfdf392b43d": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExnRKjlKmdNwXFY1OdgIfWeyLpBPt\nBQ1dUMWkhKdGnQsOMjSldR87N7tY490eVvDScow7Qgtg8jxznX1FvVm9Uw==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@-test-1"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "452d01cd3affe99cb9bed1fb797cd5111fad7794af27ed68b854ecfdf392b43d"
+     ],
+     "name": "new-delegate",
+     "paths": [
+      "new-delegate/*",
+      "new-delegate/*/*",
+      "new-delegate/*/*/*",
+      "new-delegate/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2025-05-29T09:16:07Z",
   "spec_version": "1.0.31",
   "targets": {
    "bar": {
@@ -23,7 +51,7 @@
     "length": 4
    }
   },
-  "version": 7,
+  "version": 8,
   "x-tuf-on-ci-expiry-period": 360,
   "x-tuf-on-ci-signing-period": 60
  }
