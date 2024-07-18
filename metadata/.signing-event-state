@@ -1,7 +1,0 @@
-{
-  "invites": {
-    "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/46ddcdd5e5484810940096cb3298e87a": [
-      "new-delegate"
-    ]
-  }
-}
