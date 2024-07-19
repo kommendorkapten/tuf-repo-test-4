@@ -8,10 +8,21 @@
  "signed": {
   "_type": "targets",
   "delegations": {
-   "keys": {},
+   "keys": {
+    "452d01cd3affe99cb9bed1fb797cd5111fad7794af27ed68b854ecfdf392b43d": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExnRKjlKmdNwXFY1OdgIfWeyLpBPt\nBQ1dUMWkhKdGnQsOMjSldR87N7tY490eVvDScow7Qgtg8jxznX1FvVm9Uw==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@-test-1"
+    }
+   },
    "roles": [
     {
-     "keyids": [],
+     "keyids": [
+      "452d01cd3affe99cb9bed1fb797cd5111fad7794af27ed68b854ecfdf392b43d"
+     ],
      "name": "new-delegate",
      "paths": [
       "new-delegate/*",
@@ -24,7 +35,7 @@
     }
    ]
   },
-  "expires": "2025-07-14T09:01:14Z",
+  "expires": "2025-07-14T09:02:55Z",
   "spec_version": "1.0.31",
   "targets": {
    "bar": {
