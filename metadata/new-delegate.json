@@ -2,26 +2,22 @@
  "signatures": [
   {
    "keyid": "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e",
-   "sig": "3045022017ed959c402986cfce36cd169ef61083f8119c0aae6a835bb4bd8312c17c4a71022100f61d89b5373e4fdc1db6d68bf9e595dc9de6bad58273ac5d47f1e82e35b65508"
-  },
-  {
-   "keyid": "452d01cd3affe99cb9bed1fb797cd5111fad7794af27ed68b854ecfdf392b43d",
-   "sig": "3044022066d31a1a84ee615066bb41a1062015ec57855b3685c198e7a7341ddbfeca8e710220283fe858355365e544f4805760f8ad1e6daaf8703fd301927f49a265b80036f7"
+   "sig": "304402205c58b6e99163fa3c79734f79639a5b16c33143253f56756e07b0d6a2a086f3c2022024cb7324f0f9b715cb687287da9941e1d2b64d5654ac0422591e6088c0379d63"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2025-07-18T12:51:56Z",
+  "expires": "2025-07-19T08:56:01Z",
   "spec_version": "1.0.31",
   "targets": {
    "new-delegate/file1.txt": {
     "hashes": {
-     "sha256": "2bd9211793fb477a58e9bde36c05db20ca905de9d8978feec2d6a3d5953357b7"
+     "sha256": "dd7592f72fdf97e498da75bc79fa8943bdb92c93e3a887137c4ecdc3303bac6e"
     },
-    "length": 26
+    "length": 37
    }
   },
-  "version": 3,
+  "version": 4,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
