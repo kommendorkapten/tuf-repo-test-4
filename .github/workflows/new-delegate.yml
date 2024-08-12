@@ -1,0 +1,21 @@
+name: New Delegate Signing
+
+permissions: {}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sign-and-push:
+    name: TUF-on-CI New Delegate sign
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # for making commits in signing event and for modifying draft state
+      pull-requests: write # for modifying signing event pull requests
+
+    steps:
+      - name: Sign delegation
+        uses: kommendorkapten/tuf-on-ci/actions/signing-event@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
+        with:
+          targets_to_sign: new-delegate
+          token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
