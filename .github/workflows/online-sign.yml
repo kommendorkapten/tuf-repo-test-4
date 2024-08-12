@@ -19,7 +19,7 @@ jobs:
       actions: write # for dispatching publish workflow
     steps:
       - id: online-sign
-        uses: theupdateframework/kommendorkapten/actions/online-sign@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
+        uses: kommendorkapten/tuf-on-ci/actions/online-sign@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}

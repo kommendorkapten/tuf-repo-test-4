@@ -15,7 +15,7 @@ jobs:
       actions: write # for dispatching signing event workflow
     steps:
       - name: Create signing events for offline version bumps
-        uses: theupdateframework/kommendorkapten/actions/create-signing-events@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
+        uses: kommendorkapten/tuf-on-ci/actions/create-signing-events@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
 
