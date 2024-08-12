@@ -2,27 +2,16 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "304402203baa7c3859006a83ae30f399c78d0cda28a8f9e537a906d236e4155189a6e67302204b11aa9d7664add8496fb903b72a34fb3cbb2651ce0739fafaa58d89ac6f9b0c"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
   "delegations": {
-   "keys": {
-    "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e": {
-     "keytype": "ecdsa",
-     "keyval": {
-      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4ouQuuul3+jmFz6HcksgkGqMHclV\nEPlpMIzqg80Qs6JHIZOiRzS92muc0IDsCaDss5f1OuPnAnWaJ8CGwMVkng==\n-----END PUBLIC KEY-----\n"
-     },
-     "scheme": "ecdsa-sha2-nistp256",
-     "x-tuf-on-ci-online-uri": "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/46ddcdd5e5484810940096cb3298e87a"
-    }
-   },
+   "keys": {},
    "roles": [
     {
-     "keyids": [
-      "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e"
-     ],
+     "keyids": [],
      "name": "new-delegate",
      "paths": [
       "new-delegate/*",
@@ -35,7 +24,7 @@
     }
    ]
   },
-  "expires": "2025-08-07T09:22:36Z",
+  "expires": "2025-08-07T13:06:05Z",
   "spec_version": "1.0.31",
   "targets": {
    "bar": {
@@ -51,7 +40,7 @@
     "length": 4
    }
   },
-  "version": 15,
+  "version": 16,
   "x-tuf-on-ci-expiry-period": 360,
   "x-tuf-on-ci-signing-period": 60
  }
