@@ -16,6 +16,11 @@ jobs:
     steps:
       - name: Sign delegation
         uses: kommendorkapten/tuf-on-ci/actions/signing-event@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID }}
+          AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID}}
         with:
           targets_to_sign: new-delegate
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
