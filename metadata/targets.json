@@ -2,26 +2,26 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "30460221008dbc0c3759b45ff6f45b2a93fc286981aa4675b9393b1b53f9842a56f9af74a6022100f561622d5122a7eec6f61d6edacd96e7ea25bad47a61ae24fcb5997842230c38"
+   "sig": "3046022100cba624d0c842641b4190e99eb709d5e528064f55f6ab393d6dce55482c68f231022100965cef99e761248faf37d36fdf194df76bf638540cf6538e880e4afaa5223a64"
   }
  ],
  "signed": {
   "_type": "targets",
   "delegations": {
    "keys": {
-    "d962abc2865210ec0b9e8103e63770f2a4a005e1c470b048d8722cb3e0f01463": {
+    "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e": {
      "keytype": "ecdsa",
      "keyval": {
-      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE++Wv+DcLRk+mfkmlpCwl1GUi9EMh\npBUTz8K0fH7bE4mQuViGSyWA/eyMc0HvzZi6Xr0diHw0/lUPBvok214YQw==\n-----END PUBLIC KEY-----\n"
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4ouQuuul3+jmFz6HcksgkGqMHclV\nEPlpMIzqg80Qs6JHIZOiRzS92muc0IDsCaDss5f1OuPnAnWaJ8CGwMVkng==\n-----END PUBLIC KEY-----\n"
      },
      "scheme": "ecdsa-sha2-nistp256",
-     "x-tuf-on-ci-keyowner": "@-test-1"
+     "x-tuf-on-ci-online-uri": "azurekms://fsn-vault-2.vault.azure.net/keys/ec-key-1/46ddcdd5e5484810940096cb3298e87a"
     }
    },
    "roles": [
     {
      "keyids": [
-      "d962abc2865210ec0b9e8103e63770f2a4a005e1c470b048d8722cb3e0f01463"
+      "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e"
      ],
      "name": "new-delegate",
      "paths": [
@@ -35,7 +35,7 @@
     }
    ]
   },
-  "expires": "2025-08-07T13:08:28Z",
+  "expires": "2025-08-07T13:11:50Z",
   "spec_version": "1.0.31",
   "targets": {
    "bar": {
@@ -51,7 +51,7 @@
     "length": 4
    }
   },
-  "version": 16,
+  "version": 17,
   "x-tuf-on-ci-expiry-period": 360,
   "x-tuf-on-ci-signing-period": 60
  }
