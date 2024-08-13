@@ -1,27 +1,23 @@
 {
  "signatures": [
   {
-   "keyid": "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e",
-   "sig": "304502203ef9e3c7770ec8221b8bb070c70edc430c773cf285915c64e393f7be583a927f022100ad80ce227ec681564647eafee00f472202a3252d804d391de666270ae98345a5"
-  },
-  {
    "keyid": "d962abc2865210ec0b9e8103e63770f2a4a005e1c470b048d8722cb3e0f01463",
-   "sig": "3045022100c91fc752450e88c91a2d0199824e16f56452a62f2e579808fa945cfa34d887a0022011f1203b2da63f1ceafef7c6b9fed9545441cdcc89427ecb9959d44c23630881"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2024-08-22T11:23:09Z",
+  "expires": "2024-08-23T07:45:49Z",
   "spec_version": "1.0.31",
   "targets": {
    "new-delegate/file1.txt": {
     "hashes": {
-     "sha256": "a7edfaf4791fcf00651ea7df8954dbc09e4cf69a04a77ebe9907d8890ea21b97"
+     "sha256": "96206fb20f4147ad32f48bab5a055cc3f9fad338187bde1fa3a4644c75395860"
     },
-    "length": 82
+    "length": 102
    }
   },
-  "version": 6,
+  "version": 7,
   "x-tuf-on-ci-expiry-period": 10,
   "x-tuf-on-ci-signing-period": 9
  }
