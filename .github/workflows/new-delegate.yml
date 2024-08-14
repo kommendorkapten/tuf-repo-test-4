@@ -18,7 +18,7 @@ jobs:
     steps:
 
       - name: Sign delegation
-        uses: kommendorkapten/tuf-on-ci/actions/online-sign-targets@11710edf24f7f9a82815ce8685bedb32a8885a87
+        uses: kommendorkapten/tuf-on-ci/actions/online-sign-targets@6de81155d34db99508a5ad1ba90b2acde3bf32d9
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
