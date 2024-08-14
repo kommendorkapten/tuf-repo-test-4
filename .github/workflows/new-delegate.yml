@@ -4,18 +4,22 @@ permissions: {}
 
 on:
   workflow_dispatch:
-
+  push:
+    branches: ['sign/**']
+    paths:
+      - metadata/new-delegate.json
 jobs:
   sign-and-push:
     name: TUF-on-CI New Delegate sign
+    environment: prod
     runs-on: ubuntu-latest
     permissions:
       contents: write # for making commits in signing event and for modifying draft state
       pull-requests: write # for modifying signing event pull requests
-      actions: write # for dispatching publish workflow
     steps:
+
       - name: Sign delegation
-        uses: kommendorkapten/tuf-on-ci/actions/signing-event@50cca7b5149aa1f2166798241fb99bbc8f5fabd4
+        uses: kommendorkapten/tuf-on-ci/actions/online-sign-targets@11710edf24f7f9a82815ce8685bedb32a8885a87
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
