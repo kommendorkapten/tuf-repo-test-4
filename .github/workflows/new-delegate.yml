@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: write # for making commits in signing event and for modifying draft state
       pull-requests: write # for modifying signing event pull requests
+      actions: write # for dispatching another signing-event workflow
     steps:
 
       - name: Sign delegation
