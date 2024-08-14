@@ -11,7 +11,6 @@ on:
 jobs:
   sign-and-push:
     name: TUF-on-CI New Delegate sign
-    environment: prod
     runs-on: ubuntu-latest
     permissions:
       contents: write # for making commits in signing event and for modifying draft state
