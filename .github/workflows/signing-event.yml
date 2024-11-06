@@ -22,3 +22,9 @@ jobs:
         uses: kommendorkapten/tuf-on-ci/actions/signing-event@external-delegations
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: foo
+        run: |
+          echo "pr number"
+          echo ${{ github.event.number }}
+          echo "pr number eot"
