@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "d7d2d47a3f644fc3a685bac7b39c81ed9f9cee48ff861b44fbd86b91e34e7829",
-   "sig": "3046022100cba624d0c842641b4190e99eb709d5e528064f55f6ab393d6dce55482c68f231022100965cef99e761248faf37d36fdf194df76bf638540cf6538e880e4afaa5223a64"
+   "sig": ""
   }
  ],
  "signed": {
@@ -35,7 +35,7 @@
     }
    ]
   },
-  "expires": "2025-08-07T13:11:50Z",
+  "expires": "2025-10-31T14:48:17Z",
   "spec_version": "1.0.31",
   "targets": {
    "bar": {
@@ -51,8 +51,8 @@
     "length": 4
    }
   },
-  "version": 17,
-  "x-tuf-on-ci-expiry-period": 360,
+  "version": 18,
+  "x-tuf-on-ci-expiry-period": 359,
   "x-tuf-on-ci-signing-period": 60
  }
 }
