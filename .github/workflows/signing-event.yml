@@ -24,7 +24,12 @@ jobs:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: foo
-        run: |
-          echo "pr number"
-          echo ${{ github.event.number }}
-          echo "pr number eot"
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        script: |
+          const result = await octokit.rest.repos.listPullRequestsAssociatedWithCommit({
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              commit_sha: github.context.sha
+          })
+
+          console.log(result)
