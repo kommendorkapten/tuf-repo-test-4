@@ -2,12 +2,12 @@
  "signatures": [
   {
    "keyid": "bcdd50f7083c715e5578026a59d1501078fe13b276e4783ba6aa752fa4a0917e",
-   "sig": "304402201b6c0201f9d44c90217db4bf89612f7e56a1b8d14e2a2103dad491f743c0e8180220268c25d791e4b73de0d763d55b52337fe975ae09f6677eeae28797b2bf3687de"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2024-12-21T08:53:36Z",
+  "expires": "2024-12-22T13:26:33Z",
   "spec_version": "1.0.31",
   "targets": {
    "new-delegate/file1.txt": {
@@ -17,7 +17,7 @@
     "length": 113
    }
   },
-  "version": 9,
+  "version": 10,
   "x-tuf-on-ci-expiry-period": 10,
   "x-tuf-on-ci-signing-period": 9
  }
