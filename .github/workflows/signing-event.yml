@@ -19,6 +19,6 @@ jobs:
 
     steps:
       - name: Signing event
-        uses: kommendorkapten/tuf-on-ci/actions/signing-event@list-pr
+        uses: kommendorkapten/tuf-on-ci/actions/signing-event@no-closed-prs
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
